@@ -37,7 +37,7 @@ The application provides a modern UI using Material UI (MUI) and seamless fronte
 * Material UI (MUI)
 * React Router DOM
 * Axios
-* Emotion Styling
+  
 
 ## Backend
 
@@ -47,56 +47,6 @@ The application provides a modern UI using Material UI (MUI) and seamless fronte
 * Mongoose
 * CORS
 
----
-
-# Frontend Dependencies
-
-```json
-{
-  "@emotion/react": "^11.14.0",
-  "@emotion/styled": "^11.14.1",
-  "@mui/material": "^9.0.0",
-  "axios": "^1.15.0",
-  "react": "^19.2.4",
-  "react-dom": "^19.2.4",
-  "react-router-dom": "^7.14.1"
-}
-```
-
----
-
-# Backend Dependencies
-
-```json
-{
-  "cors": "^2.8.6",
-  "express": "^5.2.1",
-  "mongoose": "^9.4.1"
-}
-```
-
----
-
-# Project Structure
-
-```bash
-Studentapp-CRUD/
-│
-├── frontend/
-│   ├── src/
-│   ├── components/
-│   ├── pages/
-│   ├── App.jsx
-│   └── main.jsx
-│
-├── backend/
-│   ├── models/
-│   ├── routes/
-│   ├── controller/
-│   ├── server.js
-│   └── db.js
-│
-└── README.md
 ```
 
 ---
@@ -110,14 +60,6 @@ git clone https://github.com/Adarshinb/Studentapp-CRUD.git
 ```
 
 ---
-
-# Frontend Setup
-
-## Navigate to Frontend
-
-```bash
-cd frontend
-```
 
 ## Install Dependencies
 
@@ -141,12 +83,6 @@ http://localhost:5173
 
 # Backend Setup
 
-## Navigate to Backend
-
-```bash
-cd backend
-```
-
 ## Install Dependencies
 
 ```bash
@@ -169,13 +105,6 @@ http://localhost:5000
 
 # MongoDB Connection
 
-Create a `.env` file inside backend folder:
-
-```env
-MONGO_URI=your_mongodb_connection_string
-PORT=5000
-```
-
 Example:
 
 ```env
@@ -188,10 +117,10 @@ MONGO_URI=mongodb://127.0.0.1:27017/studentdb
 
 | Method | Endpoint      | Description        |
 | ------ | ------------- | ------------------ |
-| GET    | /students     | Fetch all students |
-| POST   | /students     | Add new student    |
-| PUT    | /students/:id | Update student     |
-| DELETE | /students/:id | Delete student     |
+| GET    | /             | Fetch all students |
+| POST   | /add          | Add new student    |
+| PUT    | /edit/:id     | Update student     |
+| DELETE | /remove/:id   | Delete student     |
 
 ---
 
@@ -248,18 +177,6 @@ Used for enabling frontend-backend communication.
 ```bash
 npm install cors
 ```
-
----
-
-# Future Improvements
-
-* Authentication & Authorization
-* JWT Login System
-* Search & Filter
-* Pagination
-* Dashboard Analytics
-* Student Profile Image Upload
-* Role-based Access
 
 ---
 

@@ -4,7 +4,7 @@ var cors = require('cors')
 require("./connection")
 var stuModel=require("./Model/student")
 
-//initialize
+//initialize express
 const app = express()
 
 //middleware

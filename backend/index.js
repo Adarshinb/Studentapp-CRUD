@@ -7,7 +7,7 @@ var stuModel=require("./Model/student")
 //initialize
 const app = express()
 
-//midd
+//middleware
 app.use(express.json())
 app.use(cors())
 
@@ -17,9 +17,6 @@ app.get('/', (req, res) => {
   res.send('Hello World')
 })
 
-app.get('/sample', (req, res) => {
-  res.send('trial message')
-})
 
 //add api
 app.post('/add', (req, res) => {
@@ -39,6 +36,7 @@ app.delete('/remove/:id', async (req, res) => {
   res.send("data deleted")
 })
 
+//update api
 app.put('/edit/:id', async (req, res) => {
   await stuModel.findByIdAndUpdate(req.params.id, req.body)
   res.send("data updated")

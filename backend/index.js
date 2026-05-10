@@ -45,11 +45,7 @@ app.put('/edit/:id', async (req, res) => {
 })
 
 
-<<<<<<< Updated upstream
 //port setting
-=======
-//port setting to 3000
->>>>>>> Stashed changes
 app.listen(3000, () => {
   console.log('Server is running on http://localhost:3000')
 })
